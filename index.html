@@ -1,152 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revax | Home </title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
-    <div id="particles-js"></div>
-    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
 
-    <!-- Splash Screen and Music -->
-    <div id="splash-screen" onclick="playMusic()">
-        <div class="splash-content">
-            <h1>Welcome to Revax Chairs</h1>
-        </div>
-    </div>
-    
-    <div class="music-container">
-        <audio id="background-music" loop>
-            <source src="background-music.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-    </div>      
-    <!-- Your existing content goes here -->
-    <div class="content-wrapper">
-        <div class="brand">
-            <a href="#home" class="brand-revax" style="--glow-color:#e7e5e494; --text-color:#ffffff;">Revax</a>
-            <a href="#home" class="brand-spoofer" style="--glow-color:#22a9ec77; --text-color:#00eeff;">Chairs</a>
-        </div>
-        <div class="nav">
-            <a href="#features" style="--glow-color:#e7e5e494; --text-color:#ffffff;">Features</a>
-            <a href="#pricing" style="--glow-color:#22a9ec77; --text-color:#00eeff;">Pricing</a>
-            <a href="#faq" style="--glow-color:#e7e5e494; --text-color:#ffffff;">FAQ</a>
-            <a href="#discord" style="--glow-color:#22a9ec77; --text-color:#00eeff;">Discord</a>
-        </div>
-        <div class="content">
-            <h1 class="glow">
-                <span class="outer-glow" style="--glow-color:#e7e5e494; --text-color:#ffffff;">Revax</span>
-                <span> </span>
-                <span class="outer-glow" style="--glow-color:#22a9ec77; --text-color:#00eeff;">Chairs</span>
-            </h1>
-            <p class="slight-glow" style="--glow-color:#e7e5e494; --text-color:#ffffff; margin-top: -40px;">Experience the ultimate chill in gaming domination.</p>
-            <button class="btn">Get Started</button>
-        </div>
-        <div class="products-section">
-            <h2>Our Products</h2>
-            <div class="products-list">
-                <div class="product">
-                    <img src="https://media.discordapp.net/attachments/1314366294782378146/1322235818525458605/IMG_1637.png?ex=67702391&is=676ed211&hm=b1f1be33e60f909fa32b8e8ca7bedd66ba416591adc354f2ff12e94a062ee6e9&=&format=webp&quality=lossless" alt="Product 1" class="product-img">
-                    <div class="product-info">
-                        <div class="product-title">Revax Public</div>
-                        <div class="product-price">4$ - 80$</div>
-                        <button data-sellix-product="676f45c672884" type="submit" alt="Buy Now with sellix.io" class="product-button">Purchase</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="https://media.discordapp.net/attachments/1314366294782378146/1322235923701956678/IMG_1577.png?ex=677023aa&is=676ed22a&hm=97bbeddb89282f8037499f1d43304f3eb90e199e636295d70248d7b8c9b272a8&=&format=webp&quality=lossless" alt="Product 2" class="product-img">
-                    <div class="product-info">
-                        <div class="product-title">Revax Private</div>
-                        <div class="product-price">8$ - 150$</div>
-                        <button data-sellix-product="676f4850b99f5" type="submit" alt="Buy Now with sellix.io" class="product-button">Purchase</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="https://media.discordapp.net/attachments/1314366294782378146/1322235818928242781/IMG_1636.png?ex=67702391&is=676ed211&hm=71c04f2b90ddb9905130be19d572ca9521438aab003f9d8623c6463df0170f67&=&format=webp&quality=lossless" alt="Product 3" class="product-img">
-                    <div class="product-info">
-                        <div class="product-title">Revax Temp</div>
-                        <div class="product-price">5$ - 35$</div>
-                        <button data-sellix-product="676f49a22677d" type="submit" alt="Buy Now with sellix.io"class="product-button">Purchase</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="https://media.discordapp.net/attachments/1314366294782378146/1322235818928242781/IMG_1636.png?ex=67702391&is=676ed211&hm=71c04f2b90ddb9905130be19d572ca9521438aab003f9d8623c6463df0170f67&=&format=webp&quality=lossless" alt="Product 4" class="product-img">
-                    <div class="product-info">
-                        <div class="product-title">Revax Perm</div>
-                        <div class="product-price">$15 - $45</div>
-                        <button data-sellix-product="676f49ab9049e" type="submit" alt="Buy Now with sellix.io" class="product-button">Purchase</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="virtualize-section">
-            <h2 class="virtualize-heading">
-                <span class="custom-color1">Not</span> 
-                <span class="custom-color2">Convinced</span> 
-                <span class="custom-color3">Yet?</span>
-            </h2>
-            <div class="virtualize-list">
-                <div class="virtualize-item">
-                    <img src="https://media.discordapp.net/attachments/1313577465549160448/1322281727795920968/icons8-shield-32.png?ex=67704e52&is=676efcd2&hm=ffcd81fb5ef91737cb2618fff9b0bf79fe065f5b51b237b2db2c5375d8ca912a&=&format=webp&quality=lossless" alt="Icon" class="custom-icon">
-                    <div class="virtualize-item-title">Undetected</div>
-                    <div class="virtualize-item-description">Our products have been thoroughly tested to ensure that they are completely undetected.</div>
-                </div>
-                <div class="virtualize-item">
-                    <img src="https://media.discordapp.net/attachments/1313577465549160448/1322282184593375282/icons8-headset-32.png?ex=67704ebf&is=676efd3f&hm=5624c52ce5893060c0760977164796b2396382c85df856c6aaba403d24e3d4b4&=&format=webp&quality=lossless" alt="Icon" class="custom-icon">
-                    <div class="virtualize-item-title">24/7 Support</div>
-                    <div class="virtualize-item-description">Our support team is always on to help with any questions or issues you might have.</div>
-                </div>
-                <div class="virtualize-item">
-                    <img src="https://media.discordapp.net/attachments/1313577465549160448/1322282544498213088/icons8-medal-32.png?ex=67704f15&is=676efd95&hm=2858f36377ce97729641619103240d4ed0e97decf6b46cec91e5b59eed84404b&=&format=webp&quality=lossless" alt="Icon" class="custom-icon">
-                    <div class="virtualize-item-title">High Quality</div>
-                    <div class="virtualize-item-description">We only offer the highest quality products to ensure that you get the best experience possible.</div>
-                </div>
-                <div class="virtualize-item">
-                    <img src="https://media.discordapp.net/attachments/1313577465549160448/1322284154884460624/icons8-rocket-32.png?ex=67705095&is=676eff15&hm=4544b5038b4d05f336ffb42a61fb67e4c5e278cbabfb22890f37d1dbb0196d32&=&format=webp&quality=lossless" alt="Icon" class="custom-icon">
-                    <div class="virtualize-item-title">Instant Delivery</div>
-                    <div class="virtualize-item-description">We provide instant delivery for all of our products to ensure the best experience.</div>
-                </div>
-            </div>        
-        </div>
-        <div class="virtualize-section">
-            <h2 class="video-heading"> Showcase </h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OAJbYbw0-RA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var splashScreen = document.getElementById('splash-screen');
-            var music = document.getElementById('background-music');
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
 
-            // Auto-play music
-            music.play().catch(function(error) {
-                console.log('Auto-play failed:', error);
-                // In case of an error, display the play button
-                var button = document.createElement('button');
-                button.textContent = 'Play Music';
-                button.onclick = function() {
-                    music.play();
-                    button.style.display = 'none';
-                };
-                document.querySelector('.music-container').appendChild(button);
-            });
+<!-- particles.js container -->
+<div id="particles-js"></div>
 
-            setTimeout(function() {
-                splashScreen.style.opacity = 0;
-                setTimeout(function() {
-                    splashScreen.style.display = 'none';
-                }, 500);
-            }, 3000); // Adjust the timeout value as needed
-        });
-    </script>
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
 </body>
 </html>
